@@ -1,0 +1,24 @@
+<form class="container mt-5 pt-5 mb-5 form-check">
+<h3 class="text-decoration-underline">Thêm sản phẩm</h3>
+  <div class="mb-3">
+    <label for="exampleInputEmail1" class="form-label">name</label>
+    <input type="text" class="form-control" [(ngModel)]="product.name" name="name" aria-describedby="emailHelp">
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">image</label>
+    <input type="text" [(ngModel)]="product.image" name="image" class="form-control" >
+  </div>
+  <div class="mb-3">
+    <label  class="form-label">price</label>
+    <input type="text" [(ngModel)]="product.price" name="price" class="form-control" >
+  </div>
+  <div class="mb-3">
+    <label    class="form-label">description</label>
+    <input type="text"  [(ngModel)]="product.description" name="description" class="form-control" >
+  </div>
+  <div class="mb-3">
+    <label   class="form-label">status</label>
+    <input [(ngModel)]="product.status"  name="status"  class="form-check-input" type="checkbox" id="flexSwitchCheckDefault" >
+  </div>
+  <button (click)="onHandleAdd()" class="btn btn-primary">Submit</button>
+</form>
